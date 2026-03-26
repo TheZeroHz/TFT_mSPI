@@ -2,8 +2,6 @@
 
 Pure MicroPython TFT display + touch library with a **TFT_eSPI-like API**. It is designed to be **modular** and to cover the common ST/GC/ILI display controller families, plus popular touch controllers.
 
-This repo contains earlier ST7735-only scripts (`ST7735.py`, `graphicstest.py`, etc.). The new library installs as the **`TFT_mSPI`** package (via `mip`).
-
 ## Supported targets (v1)
 
 - **ESP32** (ESP32 / S2 / S3)
