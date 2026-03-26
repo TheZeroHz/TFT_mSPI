@@ -1,0 +1,37 @@
+{
+  "name": "TFT_mSPI",
+  "version": "0.1.0",
+  "description": "Pure MicroPython TFT display + touch library (TFT_eSPI-like API).",
+  "urls": [
+    ["TFT_mSPI/__init__.py", "TFT_mSPI/__init__.py"],
+
+    ["TFT_mSPI/core/__init__.py", "TFT_mSPI/core/__init__.py"],
+    ["TFT_mSPI/core/colors.py", "TFT_mSPI/core/colors.py"],
+    ["TFT_mSPI/core/bus_spi.py", "TFT_mSPI/core/bus_spi.py"],
+    ["TFT_mSPI/core/panel.py", "TFT_mSPI/core/panel.py"],
+    ["TFT_mSPI/core/tft.py", "TFT_mSPI/core/tft.py"],
+
+    ["TFT_mSPI/panels/__init__.py", "TFT_mSPI/panels/__init__.py"],
+    ["TFT_mSPI/panels/st7735.py", "TFT_mSPI/panels/st7735.py"],
+    ["TFT_mSPI/panels/st7789.py", "TFT_mSPI/panels/st7789.py"],
+    ["TFT_mSPI/panels/st7796.py", "TFT_mSPI/panels/st7796.py"],
+    ["TFT_mSPI/panels/ili9341.py", "TFT_mSPI/panels/ili9341.py"],
+    ["TFT_mSPI/panels/ili9486.py", "TFT_mSPI/panels/ili9486.py"],
+    ["TFT_mSPI/panels/ili9488.py", "TFT_mSPI/panels/ili9488.py"],
+    ["TFT_mSPI/panels/gc9a01.py", "TFT_mSPI/panels/gc9a01.py"],
+
+    ["TFT_mSPI/touch/__init__.py", "TFT_mSPI/touch/__init__.py"],
+    ["TFT_mSPI/touch/base.py", "TFT_mSPI/touch/base.py"],
+    ["TFT_mSPI/touch/xpt2046.py", "TFT_mSPI/touch/xpt2046.py"],
+    ["TFT_mSPI/touch/stmpe610.py", "TFT_mSPI/touch/stmpe610.py"],
+    ["TFT_mSPI/touch/ft6236.py", "TFT_mSPI/touch/ft6236.py"],
+    ["TFT_mSPI/touch/gt911.py", "TFT_mSPI/touch/gt911.py"],
+    ["TFT_mSPI/touch/cst816.py", "TFT_mSPI/touch/cst816.py"],
+
+    ["TFT_mSPI/compat/__init__.py", "TFT_mSPI/compat/__init__.py"],
+    ["TFT_mSPI/compat/tft_espi.py", "TFT_mSPI/compat/tft_espi.py"],
+
+    ["sysfont.py", "sysfont.py"]
+  ]
+}
+
