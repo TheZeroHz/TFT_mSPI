@@ -235,7 +235,15 @@ class TFT:
             return
         self._set_addr_window(x, y, x, y)
         c = int(color) & 0xFFFF
-        self.bus.write_data(bytearray([c >> 8, c & 0xFF]))
+        if self._pixel_format == 16:
+            self.bus.write_data(bytearray([c >> 8, c & 0xFF]))
+            return
+
+        # 18-bit write: expand RGB565 -> RGB666 (3 bytes)
+        r = (c & 0xF800) >> 8
+        g = (c & 0x07E0) >> 3
+        b = (c & 0x001F) << 3
+        self.bus.write_data(bytearray([r & 0xFF, g & 0xFF, b & 0xFF]))
 
     def line(self, start, end, color):
         self.draw_line(start[0], start[1], end[0], end[1], color)
@@ -736,4 +744,5 @@ class TFT:
             yi = y + int(round(r_inner * sa))
             self.draw_line(xi, yi, xo, yo, color)
             a += step
+
 
